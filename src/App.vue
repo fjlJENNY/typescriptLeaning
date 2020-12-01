@@ -1,13 +1,21 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
   </div>
 </template>
+<script lang="ts">
+import {tom} from '@/code/typescript/interface.ts'
+  export default {
+    data(){
+      return{}
+    },
+    methods:{
 
+    },
+    mounted(){
+      console.log('tom :',tom);
+    }
+  }
+</script>
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
